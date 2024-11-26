@@ -6,4 +6,5 @@ file_name = 'merged_olist_dataset.csv'
 # Read the CSV file into a Pandas DataFrame
 df = pd.read_csv(file_name)
 
-print(df.head(n=5))
+
+print(df['product_category_name_english'].isna().sum())
